@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -42,11 +43,24 @@ public class Driver {
         return driver;
     }
 
-    public static void closeDriver(){
-        if(driver!=null)
+    public static void closeDriver() {
+        if (driver != null)
 
             driver.quit(); //this line will kill the sessian value will now be null
-        driver=null;
+        driver = null;
     }
 
+    public static void sleep(int sec) {
+        try {
+            Thread.sleep(sec + 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    //this method accepts a String "expectedTitle " and assers if it is true
+    public static void verifyTitle(WebDriver driver, String expectedTitle) {
+        Assert.assertEquals(driver.getTitle(), expectedTitle);
+    }
 }
