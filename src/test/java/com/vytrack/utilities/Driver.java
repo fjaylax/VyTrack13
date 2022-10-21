@@ -20,7 +20,7 @@ public class Driver {
     //crate reusable utility method which will return same driver instance when we call it
     public static WebDriver getDriver() {
         if (driver == null) {
-            String browserType =ConfigurationReader.getProperty("browser");
+            String browserType = ConfigurationReader.getProperty("browser");
             switch (browserType) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
@@ -39,14 +39,14 @@ public class Driver {
 
             }
         }
-        //same driver will return evrytime we call Driver .getDriver method
+        //same driver will return everytime we call Driver .getDriver method
         return driver;
     }
 
     public static void closeDriver() {
         if (driver != null)
 
-            driver.quit(); //this line will kill the sessian value will now be null
+            driver.quit(); //this line will kill the session value will now be null
         driver = null;
     }
 
