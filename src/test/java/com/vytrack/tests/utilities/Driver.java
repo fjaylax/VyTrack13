@@ -1,4 +1,4 @@
-package com.vytrack.utilities;
+package com.vytrack.tests.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,7 @@ public class Driver {
     //crate reusable utility method which will return same driver instance when we call it
     public static WebDriver getDriver() {
         if (driver == null) {
-            String browserType = ConfigurationReader.getProperty("browser");
+            String browserType =ConfigurationReader.getProperty("browser");
             switch (browserType) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();

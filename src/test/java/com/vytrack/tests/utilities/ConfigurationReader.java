@@ -1,4 +1,4 @@
-package com.vytrack.utilities;
+package com.vytrack.tests.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

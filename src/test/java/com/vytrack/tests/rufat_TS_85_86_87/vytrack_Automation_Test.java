@@ -1,6 +1,6 @@
 package com.vytrack.tests.rufat_TS_85_86_87;
 
-import com.vytrack.utilities.Driver;
+import com.vytrack.tests.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
