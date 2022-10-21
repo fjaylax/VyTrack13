@@ -45,6 +45,7 @@ public class Driver {
 
     public static void closeDriver() {
         if (driver != null)
+
             driver.quit(); //this line will kill the sessian value will now be null
         driver = null;
     }
