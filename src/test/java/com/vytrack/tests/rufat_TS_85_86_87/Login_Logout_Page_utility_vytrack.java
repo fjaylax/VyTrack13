@@ -20,6 +20,5 @@ public class Login_Logout_Page_utility_vytrack {
           clickUserMenu.click();
           WebElement logOut = driver.findElement(By.linkText("Logout"));
           logOut.click();
-          //
      }
 }
