@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression suite">
+    <test name="Rufat_vytrack_automation_test">
+        <classes>
+            <class name="com.vytrack.tests.rufat_TS_85_86_87.vytrack_Automation_Test"></class>
+        </classes>
+    </test>
+</suite>
