@@ -11,13 +11,20 @@ public class DashboardPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy (xpath = "//span[.='Calendar Events']/..")
+    @FindBy(xpath = "//span[.='Calendar Events']/..")
     public WebElement calendarEventDropModule;
 
-    @FindBy (xpath = "//a[@title='Create Calendar event']")
+    @FindBy(xpath = "//a[@title='Create Calendar event']")
     public WebElement createCalendarEventBtn;
 
-    @FindBy (xpath = "(//span[normalize-space()='Activities'])[1]")
+    @FindBy(xpath = "(//span[normalize-space()='Activities'])[1]")
     public WebElement activitiesDropdownModule;
+
+    @FindBy(xpath = "//i[@class='fa-question-circle']")
+    public WebElement questionIcon;
+
+    @FindBy(xpath = "//div[@class='pin-bar-empty']//a")
+    public WebElement linkLearnEtc;
+
 
 }
